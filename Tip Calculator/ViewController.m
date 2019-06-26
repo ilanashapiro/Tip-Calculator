@@ -51,7 +51,6 @@
 }
 
 - (IBAction)onEditingDidEnd:(id)sender {
-    //make a copy of mealbillfield's frame to edit since we can't change mealbillfield frame directly due to rules of language
     CGRect newFrame = self.mealBillField.frame;
     newFrame.origin.y -= 30;
     
@@ -69,7 +68,7 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     double doubleValue = [defaults doubleForKey:@"default_tip_percentage"];
-    NSLog(@"%f", doubleValue);
+
     NSInteger selectedSegment;
     
     if(doubleValue == 0.22) {
