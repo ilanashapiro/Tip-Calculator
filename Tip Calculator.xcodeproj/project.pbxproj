@@ -15,6 +15,7 @@
 		4749D2C522C2C19800E5EC63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4749D2C422C2C19800E5EC63 /* main.m */; };
 		4749D2CF22C2C19800E5EC63 /* Tip_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4749D2CE22C2C19800E5EC63 /* Tip_CalculatorTests.m */; };
 		4749D2DA22C2C19800E5EC63 /* Tip_CalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4749D2D922C2C19800E5EC63 /* Tip_CalculatorUITests.m */; };
+		4749D2E922C2DA7800E5EC63 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4749D2E822C2DA7800E5EC63 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		4749D2D522C2C19800E5EC63 /* Tip CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4749D2D922C2C19800E5EC63 /* Tip_CalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tip_CalculatorUITests.m; sourceTree = "<group>"; };
 		4749D2DB22C2C19800E5EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4749D2E722C2DA7800E5EC63 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		4749D2E822C2DA7800E5EC63 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				4749D2B822C2C19700E5EC63 /* ViewController.h */,
 				4749D2B922C2C19700E5EC63 /* ViewController.m */,
 				4749D2BB22C2C19700E5EC63 /* Main.storyboard */,
+				4749D2E722C2DA7800E5EC63 /* SettingsViewController.h */,
+				4749D2E822C2DA7800E5EC63 /* SettingsViewController.m */,
 				4749D2BE22C2C19800E5EC63 /* Assets.xcassets */,
 				4749D2C022C2C19800E5EC63 /* LaunchScreen.storyboard */,
 				4749D2C322C2C19800E5EC63 /* Info.plist */,
@@ -265,6 +270,7 @@
 				4749D2BA22C2C19700E5EC63 /* ViewController.m in Sources */,
 				4749D2C522C2C19800E5EC63 /* main.m in Sources */,
 				4749D2B722C2C19700E5EC63 /* AppDelegate.m in Sources */,
+				4749D2E922C2DA7800E5EC63 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,12 +442,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DH593U6VL;
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ilanashapiro.Tip-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilanashapiro.tips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,12 +459,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DH593U6VL;
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ilanashapiro.Tip-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilanashapiro.tips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
