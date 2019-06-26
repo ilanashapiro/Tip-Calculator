@@ -19,6 +19,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    double doubleValue = [defaults doubleForKey:@"default_tip_percentage"];
+    
+    NSInteger selectedSegment;
+    
+    if(doubleValue == 0.22) {
+        selectedSegment = 2;
+    }
+    else if(doubleValue == 0.20) {
+        selectedSegment = 1;
+    }
+    else {
+        selectedSegment = 0;
+    }
+    [self.defaultTip setSelectedSegmentIndex:selectedSegment];
+    NSLog(@"View will appear");
+}
+
 - (IBAction)onSelect:(id)sender {
     NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
     double tipPercentage = [percentages[self.defaultTip.selectedSegmentIndex] doubleValue];
